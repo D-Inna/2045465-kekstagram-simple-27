@@ -1,7 +1,7 @@
 import { showAlert } from './util.js';
 
 const getData = (onSuccess) => {
-  fetch('https://27.javascript.pages.academy/kekstagram-simple/data')
+  fetch('https://27.javascript.htmlacademy.pro/kekstagram-simple/data')
     .then((response) => response.json())
     .then((images) => {
       onSuccess(images);
@@ -32,3 +32,5 @@ const sendData = (onSuccess, onFail, body) => {
 };
 
 export {getData, sendData};
+
+//https://27.javascript.pages.academy/kekstagram-simple/data
